@@ -104,6 +104,37 @@
     font-size: 2em;
     color: #ffffff;
 }
+/**/
+.erreur {
+    background: url('image/img2.png') no-repeat center center/cover;
+    height: 120vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .erreur h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-size: 5em;
+    color: #ffffff;
+  }
+  
+  /*.erreur p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+  }*/
+  
+  
+
+  
+ 
+   
 /*about*/
 
 .about{
