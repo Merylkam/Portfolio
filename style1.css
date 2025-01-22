@@ -122,67 +122,119 @@
     font-size: 5em;
     color: #ffffff;
   }
-  
-  /*.erreur p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin: 0 auto 20px;
-  }*/
-  
-  
-
-  
- 
    
 /*about*/
 
-.about{
-    width:100%;
-    padding: 80px 0px;
+/* Style de base pour la section */
+.about {
+    width: 100%;
+    padding: 80px 0;
     background-color: rgb(145, 74, 211);
 }
-.about img{
-height: auto;
-width: 25%;
+
+.about img {
+    height: auto;
+    width: 25%;
 }
-.about_text{
+
+/* Style du texte */
+.about_text {
     width: 65%;
-    
 }
 
-
-.about_text p{
- 
+/* Textes du paragraphe */
+.about_text p {
     text-align: justify;
-}
-.main{
-width:1130px ;
-max-width:95% ;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: space-around;
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
 }
 
-.about_text h2{
-    color:#ffffff;
+/* Conteneur principal */
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Titre h2 */
+.about_text h2 {
+    color: #ffffff;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
-/*.about h1{
- padding-bottom: 10px;
- padding-top:0px;
-}*/
 
-.about_text p{
-    color:#ffffff;
-    letter-spacing: 1px;
-    line-height:28px;
-    font-size: 18px;
-    margin-bottom: 45px;
+/* Media Queries pour la responsivité */
+
+/* Pour les écrans plus petits que 1024px (tablettes) */
+@media (max-width: 1024px) {
+    .about img {
+        width: 35%; /* L'image prend plus de place */
+    }
+
+    .about_text {
+        width: 55%; /* Le texte prend un peu plus de place */
+    }
+
+    .about_text h2 {
+        font-size: 60px; /* Réduit la taille du titre */
+    }
+
+    .about_text p {
+        font-size: 16px; /* Réduit la taille du texte */
+    }
 }
+
+/* Pour les écrans de 768px ou moins (tablettes et téléphones) */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Les éléments passent en colonne */
+        align-items: center; /* Centrer les éléments */
+        justify-content: center; /* Centrer les éléments */
+    }
+
+    .about img {
+        width: 50%; /* L'image prend plus de place sur les petits écrans */
+        margin-bottom: 30px; /* Espacement entre l'image et le texte */
+    }
+
+    .about_text {
+        width: 90%; /* Le texte prend presque toute la largeur */
+        text-align: center; /* Centrer le texte */
+    }
+
+    .about_text h2 {
+        font-size: 40px; /* Réduire la taille du titre */
+    }
+
+    .about_text p {
+        font-size: 14px; /* Réduire encore la taille du texte */
+        margin-bottom: 30px; /* Réduire l'espacement sous le texte */
+    }
+}
+
+/* Pour les écrans de 480px ou moins (téléphones) */
+@media (max-width: 480px) {
+    .about img {
+        width: 60%; /* L'image prend presque toute la largeur sur les très petits écrans */
+    }
+
+    .about_text h2 {
+        font-size: 30px; /* Réduit encore plus la taille du titre */
+    }
+
+    .about_text p {
+        font-size: 13px; /* Réduit encore la taille du texte */
+        line-height: 24px; /* Ajuste l'interligne pour une meilleure lisibilité */
+    }
+}
+
 /* CV */
 #cv {
     padding: 20px;
@@ -498,46 +550,111 @@ li .level {
     margin-top: 30px;
 }
 
+/* Style du formulaire */
 form {
     display: flex;
     flex-direction: column;
-    align-items:center;
-   /* background-color: #ffffff10;
-    border-radius: 50px;*/
-   
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Limite la largeur du formulaire */
+    box-sizing: border-box;
 }
 
+/* Style des labels */
 form label {
-    margin-bottom:0px;
-   color: #ffffff; 
-   width: 100%;
-   max-width: 500px;
-   margin: 3px 0;
-   padding: 12px;
-   font-size: 16px;
-  
+    margin-bottom: 0px;
+    color: #ffffff;
+    width: 100%;
+    font-size: 18px;
+    margin: 8px 0;
+    padding: 8px 30px;
+    font-weight: bold;
 }
 
+/* Style des champs de saisie (input, textarea) */
 form input, form textarea {
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 500px;
+    width: 100%; /* S'ajuste à la largeur du formulaire */
+    max-width: 500px; /* Largeur maximale pour garder une mise en page fluide */
 }
 
+/* Style du bouton */
 form button {
-    padding: 10px;
+    padding: 12px;
     background-color: #000000;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
+    max-width: 500px; /* Largeur maximale pour garder la cohérence */
 }
 
 form button:hover {
     background-color: #8c00ff;
 }
+
+/* Media Queries pour la responsivité */
+
+/* Pour les écrans de 1024px ou moins (tablettes) */
+@media (max-width: 1024px) {
+    form {
+        padding: 15px; /* Réduit le padding pour les tablettes */
+    }
+
+    form input, form textarea, form button {
+        max-width: 90%; /* Permet aux éléments de s'ajuster à la largeur de l'écran */
+    }
+
+    form label {
+        font-size: 14px; /* Réduit la taille de la police pour les écrans plus petits */
+    }
+}
+
+/* Pour les écrans de 768px ou moins (tablettes et téléphones) */
+@media (max-width: 768px) {
+    form {
+        max-width: 90%; /* Augmente la largeur du formulaire sur les écrans plus petits */
+    }
+
+    form input, form textarea, form button {
+        padding: 14px; /* Augmente le padding des champs pour les petits écrans */
+        max-width: 100%; /* Les éléments prennent toute la largeur disponible */
+    }
+
+    form label {
+        font-size: 13px; /* Réduit la taille du texte des labels */
+    }
+
+    form button {
+        font-size: 16px; /* Agrandit un peu la taille du texte du bouton */
+    }
+}
+
+/* Pour les écrans de 480px ou moins (téléphones très petits) */
+@media (max-width: 480px) {
+    form {
+        padding: 10px; /* Réduit le padding */
+    }
+
+    form input, form textarea {
+        padding: 12px; /* Réduit légèrement le padding des champs de saisie */
+    }
+
+    form button {
+        padding: 10px; /* Réduit le padding du bouton */
+    }
+
+    form label {
+        font-size: 12px; /* Réduit encore la taille du texte des labels */
+    }
+}
+
   footer {
     background-color: #131212;
     color: white;
