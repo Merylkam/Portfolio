@@ -7,4 +7,4 @@ Ce projet est un site web personnel/portfolio développé avec:  HTML, CSS,. Il 
 
 1. Clonez ce dépôt sur votre machine locale :
    ```bash
-   git clone https://github.com/username/nom_du_depot.git
+   git clone https://github.com/Merylkam/Portfolio.git
