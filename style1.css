@@ -62,7 +62,7 @@
   }
   
   .hero {
-    background: url('image/img2.png') no-repeat center center/cover;
+    background: url('image/img2.webp') no-repeat center center/cover;
     height: 80vh;
     color: white;
     display: flex;
@@ -106,7 +106,7 @@
 }
 /**/
 .erreur {
-    background: url('image/img2.png') no-repeat center center/cover;
+    background: url('image/img2.webp') no-repeat center center/cover;
     height: 120vh;
     color: white;
     display: flex;
@@ -181,38 +181,38 @@
     }
 
     .about_text {
-        width: 55%; /* Le texte prend un peu plus de place */
+        width: 55%; 
     }
 
     .about_text h2 {
-        font-size: 60px; /* Réduit la taille du titre */
+        font-size: 60px; 
     }
 
     .about_text p {
-        font-size: 16px; /* Réduit la taille du texte */
+        font-size: 16px; 
     }
 }
 
 /* Pour les écrans de 768px ou moins (tablettes et téléphones) */
 @media (max-width: 768px) {
     .main {
-        flex-direction: column; /* Les éléments passent en colonne */
-        align-items: center; /* Centrer les éléments */
-        justify-content: center; /* Centrer les éléments */
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
     }
 
     .about img {
-        width: 50%; /* L'image prend plus de place sur les petits écrans */
-        margin-bottom: 30px; /* Espacement entre l'image et le texte */
+        width: 50%; 
+        margin-bottom: 30px; 
     }
 
     .about_text {
-        width: 90%; /* Le texte prend presque toute la largeur */
-        text-align: center; /* Centrer le texte */
+        width: 90%; 
+        text-align: center; 
     }
 
     .about_text h2 {
-        font-size: 40px; /* Réduire la taille du titre */
+        font-size: 40px; 
     }
 
     .about_text p {
@@ -228,7 +228,7 @@
     }
 
     .about_text h2 {
-        font-size: 30px; /* Réduit encore plus la taille du titre */
+        font-size: 30px; 
     }
 
     .about_text p {
@@ -241,7 +241,7 @@
 #cv {
     padding: 20px;
     text-align: center;
-   background: url('image/img3.png') no-repeat center center/cover;
+   background: url('image/img3.webp') no-repeat center center/cover;
 }
 
 /*.....*/
@@ -536,7 +536,7 @@ li .level {
 #contact {
     padding: 50px 20px;
     
-    background: url('image/img2.png') no-repeat center center/cover;
+    background: url('image/img2.webp') no-repeat center center/cover;
     
   
 }
