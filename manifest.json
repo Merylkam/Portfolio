@@ -1,0 +1,25 @@
+{
+  "name": "Mon Portfolio",
+  "short_name": "Portfolio",
+  "description": "Découvrez mon portfolio en ligne. Infographiste, web designer et développeuse web.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "icons": [
+    {
+      "src": "image/KAM1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "image/KAM1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "fr",
+  "orientation": "any",
+  "prefer_related_applications": true,
+  "dir": "auto"
+}

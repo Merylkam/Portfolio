@@ -3,75 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet 1 / Mon portfolio</title>
+    <title>Projet 1 / Mon Portfolio - Agence Kafonli</title>
     <meta http-equiv="Content-Language" content="fr">
-    <meta name="description" content="Découvrez mon portfolio en ligne.">
+    <meta name="description" content="Découvrez mon portfolio en ligne, présentant les pages créées pour l'agence Kafonli, incluant des sections comme la page d'accueil, services, portfolio et plus.">
     <meta name="author" content="Kamonou">
     <link rel="stylesheet" href="style1.css">
     <link rel="icon" href="image/KAM1.png" type="image/x-icon">
-  <meta name="keywords" content="portfolio, web designer, infographiste, devellopeur web, createur numérique, KAMONOU">
+    <meta name="keywords" content="portfolio, web designer, infographiste, développeur web, créateur numérique, KAMONOU, agence Kafonli, site web, design web">
 
     <!-- OpenGraph pour Facebook -->
- <meta property="og:url" content="https://merylkam.github.io/Portfolio/" />
- <meta property="og:type" content="website" />
- <meta property="og:title" content="projet1/Mon Portfolio" />
- <meta property="og:description" content="Découvrez mon portfolio en ligne. Je suis une infographiste, web designer et développeuse web." />
- <meta property="og:image" content="https://merylkam.github.io/Portfolio/image/KAM1.png" />
+    <meta property="og:url" content="https://merylkam.github.io/Portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projet 1 / Mon Portfolio - Agence Kafonli" />
+    <meta property="og:description" content="Découvrez mon portfolio avec les projets réalisés pour l'agence Kafonli, incluant la conception du site web complet, de l'accueil au tableau de bord." />
+    <meta property="og:image" content="https://merylkam.github.io/Portfolio/image/KAM1.png" />
 
- <!-- X -->
- <meta name="twitter:card" content="summary_large_image" />
- <meta name="twitter:site" content="@merylkam" />
- <meta name="twitter:url" content="https://merylkam.github.io/Portfolio/" />
- <meta name="twitter:title" content="projet1/Mon Portfolio" />
- <meta name="twitter:description" content="Découvrez mon portfolio en ligne. Je suis une infographiste, web designer et développeuse web." />
- <meta name="twitter:image" content="https://merylkam.github.io/Portfolio/image/KAM1.png" />
- 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@merylkam" />
+    <meta name="twitter:url" content="https://merylkam.github.io/Portfolio/" />
+    <meta name="twitter:title" content="Projet 1 / Mon Portfolio - Agence Kafonli" />
+    <meta name="twitter:description" content="Découvrez mon portfolio en ligne, avec la création d'un site pour l'agence Kafonli, comprenant différentes pages et sections dynamiques." />
+    <meta name="twitter:image" content="https://merylkam.github.io/Portfolio/image/KAM1.png" />
 </head>
 <body>
 
     <!-- Section Projet 1 -->
-    <section id="projet1">
+    <section id="projet1" itemscope itemtype="https://schema.org/CreativeWork">
         <a href="index" class="cta-button">Retour</a>
-        <h2></h2>
+    <br>
+    <br>
+        <h2 itemprop="name">Projet 1 - Création du Site Web pour l'Agence Kafonli</h2>
         <br>
         <div class="projects">
+
             <!-- Projet 1 -->
-            <div class="project">
-                <img src="image/ac.png" alt="Projet 1">
-                <p class="description">Page accueil du site . Constitué d'un slide, d'une brève description de l'agence Kafonli et de ces services et aussi d'un Faq pouur les visiteurs du site .</p>
+            <div class="project" itemscope itemtype="https://schema.org/CreativeWork">
+                <img src="image/ac.png" alt="Page d'accueil du site" itemprop="image">
+                <p class="description" itemprop="description">Page d'accueil du site. Constitué d'un slider, d'une brève description de l'agence Kafonli, de ses services, ainsi qu'une FAQ pour les visiteurs.</p>
             </div>
 
             <!-- Projet 2 -->
-            <div class="project">
-                <img src="image/ap.png" alt="Projet 2">
-                <p class="description">Page à propos du site. Description de l'entreprise et présentation des membres de l'agence </p>
+            <div class="project" itemscope itemtype="https://schema.org/CreativeWork">
+                <img src="image/ap.png" alt="Page à propos" itemprop="image">
+                <p class="description" itemprop="description">Page "À propos" du site. Description détaillée de l'entreprise et présentation des membres de l'agence Kafonli.</p>
             </div>
 
             <!-- Projet 3 -->
-            <div class="project">
-                <img src="image/ser.png" alt="Projet 3">
-                <p class="description">Page services du site . Présentation des différents services que proposes l'agence</p>
+            <div class="project" itemscope itemtype="https://schema.org/CreativeWork">
+                <img src="image/ser.webp" alt="Page services" itemprop="image">
+                <p class="description" itemprop="description">Page "Services" du site. Présentation des différents services que propose l'agence Kafonli, tels que la création de sites web, le design graphique, etc.</p>
             </div>
-            <div class="project">
-                <img src="image/port.png" alt="Projet 4">
-                <p class="description">Page portfolio du site . présentation de quelques travaux de l'agence </p>
+
+            <!-- Projet 4 -->
+            <div class="project" itemscope itemtype="https://schema.org/CreativeWork">
+                <img src="image/port.png" alt="Page portfolio" itemprop="image">
+                <p class="description" itemprop="description">Page "Portfolio" du site. Présentation de quelques travaux réalisés par l'agence, afin de mettre en valeur leur expertise.</p>
             </div>
-            <div class="project">
-                <img src="image/cont.png" alt="Projet 5">
-                <p class="description">Page contact du site . Un formulaire de contact pour contacter directement l'agence et des coordonnées de l'agence</p>
+
+            <!-- Projet 5 -->
+            <div class="project" itemscope itemtype="https://schema.org/CreativeWork">
+                <img src="image/cont.png" alt="Page de contact" itemprop="image">
+                <p class="description" itemprop="description">Page "Contact" du site. Formulaire de contact pour permettre aux utilisateurs de communiquer directement avec l'agence, ainsi que les coordonnées nécessaires.</p>
             </div>
-            <div class="project">
-                <img src="image/rdv.png" alt="Projet 6">
-                <p class="description">Page rendez-vous  du site . Un formulaire ,pour prendre rendez-vous avec l'agence.</p>
+
+            <!-- Projet 6 -->
+            <div class="project" itemscope itemtype="https://schema.org/CreativeWork">
+                <img src="image/rdv.png" alt="Page rendez-vous" itemprop="image">
+                <p class="description" itemprop="description">Page "Rendez-vous" du site. Formulaire pour prendre rendez-vous directement avec l'agence, facilitant les interactions avec les clients.</p>
             </div>
-            <div class="project">
-                <img src="image/conpp.png" alt="Projet 7">
-                <p class="description">Page de connexion  . Un formulaire de connnexion pour les administrateur du site</p>
+
+            <!-- Projet 7 -->
+            <div class="project" itemscope itemtype="https://schema.org/CreativeWork">
+                <img src="image/conpp.png" alt="Page de connexion" itemprop="image">
+                <p class="description" itemprop="description">Page de connexion. Un formulaire de connexion permettant aux administrateurs du site de se connecter et de gérer le contenu du site.</p>
             </div>
-            <div class="project">
-                <img src="image/dashboardpp.png" alt="Projet 8">
-                <p class="description">Page dashboard. le tableau de bord qui permet aux administrateurs de gérer le contenus du site.</p>
+
+            <!-- Projet 8 -->
+            <div class="project" itemscope itemtype="https://schema.org/CreativeWork">
+                <img src="image/dashboardpp.png" alt="Page dashboard" itemprop="image">
+                <p class="description" itemprop="description">Page "Dashboard". Tableau de bord permettant aux administrateurs de gérer le contenu du site et de suivre les interactions des utilisateurs.</p>
             </div>
+
         </div>
     </section>
 

@@ -32,7 +32,7 @@
     <!-- Header avec navigation -->
     <header>
         <div class="container">
-            <nav>
+            <nav role="navigation">
                 <div class="logo">
                     <a href="#home" aria-label="Accueil"><img src="1.webp" alt="Logo" class="logo-img"></a>
                 </div>
@@ -56,37 +56,41 @@
             </div>
         </section>
 
-        <!-- Section CV -->
+         <!--Section CV -->
         <section id="cv">
-            <h2>Mon CV</h2>
+          <article itemscope itemtype="https://schema.org/Article">
+            <h2 itemprop="headline"> Mon CV</h2>
             <section class="about">
                 <div class="main">
-                    <img src="1.webp" alt="meryl">
+                    <img src="1.webp" alt="Photo de Meryl" itemprop="image">
                     <div class="about_text">
                         <h1>Actuellement étudiante en intégration et web design</h1>
-                        <p>Avec un parcours en arts et images numériques, je suis passionnée par la création numérique sous toutes ses formes. Mon objectif est de combiner créativité et compétences techniques pour concevoir des expériences visuelles innovantes. Mon parcours m’a permis d'explorer les différents aspects de la création numérique, du design graphique au développement, en passant par l’UX/UI et l'animation. Je recherche un stage de fin de formation dans l’infographie, le web design, ou le développement web, afin de mettre en pratique mes connaissances et contribuer à des projets stimulants.</p>
+                        <p itemprop="articleBody">Avec un parcours en arts et images numériques, je suis passionnée par la création numérique sous toutes ses formes. Mon objectif est de combiner créativité et compétences techniques pour concevoir des expériences visuelles innovantes. Mon parcours m’a permis d'explorer les différents aspects de la création numérique, du design graphique au développement, en passant par l’UX/UI et l'animation. Je recherche un stage de fin de formation dans l’infographie, le web design, ou le développement web, afin de mettre en pratique mes connaissances et contribuer à des projets stimulants.</p>
                     </div>
                 </div>
             </section>
+            
+          
 
             <div class="cv-content">
                 <div class="experiences-formation">
-                    <img src="image/formation.png" alt="formation">
+                    <img src="image/formation.png" alt="formation" itemprop="image">
                     <h3>Formations</h3>
                     <hr>
                     <ul>
-                        <li><span>Licence Professionnelle en Intégration et Web design</span><span>École d’ingénieurs en Sciences Industrielles et Numérique <br>EiSINe</span><span><img src="image/eisine.jpg" alt="eisine"></span><span class="date">depuis septembre 2024</span></li>
+                        <li><span>Licence Professionnelle en Intégration et Web design</span><span>École d’ingénieurs en Sciences Industrielles et Numérique <br>EiSINe</span><span><img src="image/eisine.jpg" alt="logo EISINE"></span><span class="date">depuis septembre 2024</span></li>
                         <br>
-                        <li><span>Licence Professionnelle en Art et images numériques</span><span>Institut des Sciences et techniques de la communication <br> ISTC Polytechnique</span><span><img src="image/istc.jpg" alt="istc"></span><span class="date">2021-2024</span></li>
+                        <li><span>Licence Professionnelle en Art et images numériques</span><span>Institut des Sciences et techniques de la communication <br> ISTC Polytechnique</span><span><img src="image/istc.jpg" alt="logo istc"></span><span class="date">2021-2024</span></li>
                         <br>
-                        <li><span>Baccalauréat scientifique</span><span>Lycée municipal 1 de Koumassi<br>(Côte d'ivoire)</span><span><img src="image/lycee.png" alt="lycee m"></span><span class="date">2021</span></li>
+                        <li><span>Baccalauréat scientifique</span><span>Lycée municipal 1 de Koumassi<br>(Côte d'ivoire)</span><span><img src="image/lycee.png" alt="logo lycee m"></span><span class="date">2021</span></li>
                     </ul>
-                    <br><br>
+                    <br>
+                    <br>
                     <hr>
                     <hr>
                     <br>
 
-                    <img src="image/date-limite-du-projet (1).png" alt="experiences">
+                    <img src="image/date-limite-du-projet (1).png" alt="experiences" itemprop="image">
                     <h3>Expériences & Projets</h3>
                     <hr>
                     <ul>
@@ -104,83 +108,84 @@
                     <br>
 
                     <div class="compétences">
-                        <img src="image/haute-qualite.png" alt="competences">
+                        <img src="image/haute-qualite.png" alt="competences" itemprop="image">
                         <h3>Compétences</h3>
                         <hr>
-                        <img src="image/dns (1).png" alt="domaines">
+                        <img src="image/dns (1).png" alt="domaines" itemprop="image">
                         <h3>Domaines</h3>
                         <hr>
                         <ul>
-                            <li><span><strong>Création numérique</strong></span><span>Intermédiaire</span><span><img src="image/creation-de-contenu.png" alt="creation"></span></li>
-                            <li><span><strong>Développement web</strong></span><span>Intermédiaire</span><span><img src="image/lien-web.png" alt="web"></span></li>
-                            <li><span><strong>Animation 2D/3D</strong></span><span>Intermédiaire</span><span><img src="image/vue-3d.webp" alt="3d"></span></li>
-                            <li><span><strong>UX/UI design</strong></span><span>Intermédiaire</span><span><img src="image/conception-ux.webp" alt="ui/ux"></span></li>
+                          <li><span><strong>Création numérique</strong></span><span>Intermédiaire</span><span><img src="image/creation-de-contenu.png" alt="création numérique" itemprop="image"></span></li>
+                          <li><span><strong>Développement web</strong></span><span>Intermédiaire</span><span><img src="image/lien-web.png" alt="développement web" itemprop="image"></span></li>
+                          <li><span><strong>Animation 2D/3D</strong></span><span>Intermédiaire</span><span><img src="image/vue-3d.webp" alt="animation 3D" itemprop="image"></span></li>
+                          <li><span><strong>UX/UI design</strong></span><span>Intermédiaire</span><span><img src="image/conception-ux.webp" alt="UX/UI design" itemprop="image"></span></li>
                         </ul>
                         <hr>
-                        <img src="image/logiciel (1).png" alt="logiciels">
+                       
+                        <img src="image/logiciel (1).png" alt="logiciels" itemprop="image">
                         <h3>Logiciels</h3>
                         <hr>
                         <ul>
-                            <li><span><strong>VS Code</strong></span><span>Intermédiaire</span><span><img src="image/Visual Studio Code.png" alt="vscode"></span></li>
-                            <li><span><strong>Figma</strong></span><span>Intermédiaire</span><span><img src="image/figma.png" alt="figma"></span></li>
-                            <li><span><strong>Adobe XD</strong></span><span>Intermédiaire</span><span><img src="image/xd.png" alt="xd"></span></li>
-                            <li><span><strong>Photoshop</strong></span><span>Intermédiaire</span><span><img src="image/photoshop.png" alt="ps"></span></li>
-                            <li><span><strong>InDesign</strong></span><span>Intermédiaire</span><span><img src="image/indesign.png" alt="in"></span></li>
-                            <li><span><strong>After Effects</strong></span><span>Intermédiaire</span><span><img src="image/after.png" alt="aftereffect"></span></li>
-                            <li><span><strong>Premiere Pro</strong></span><span>Intermédiaire</span><span><img src="image/premiere-pro.png" alt="pr"></span></li>
-                            <li><span><strong>Illustrator</strong></span><span>Avancé</span><span><img src="image/adobe-illustrator.png" alt="ai"></span></li>
-                            <li><span><strong>Maya</strong></span><span>Intermédiaire</span><span><img src="image/maya.png" alt="maya"></span></li>
+                            <li><span><strong>VS Code</strong></span><span>Intermédiaire</span><span><img src="image/Visual Studio Code.png" alt="vscode" itemprop="image"></span></li>
+                            <li><span><strong>Figma</strong></span><span>Intermédiaire</span><span><img src="image/figma.png" alt="figma" itemprop="image"></span></li>
+                            <li><span><strong>Adobe XD</strong></span><span>Intermédiaire</span><span><img src="image/xd.png" alt="xd" itemprop="image"></span></li>
+                            <li><span><strong>Photoshop</strong></span><span>Intermédiaire</span><span><img src="image/photoshop.png" alt="ps" itemprop="image"></span></li>
+                            <li><span><strong>InDesign</strong></span><span>Intermédiaire</span><span><img src="image/indesign.png" alt="in" itemprop="image"></span></li>
+                            <li><span><strong>After Effects</strong></span><span>Intermédiaire</span><span><img src="image/after.png" alt="aftereffect" itemprop="image"></span></li>
+                            <li><span><strong>Premiere Pro</strong></span><span>Intermédiaire</span><span><img src="image/premiere-pro.png" alt="pr" itemprop="image"></span></li>
+                            <li><span><strong>Illustrator</strong></span><span>Avancé</span><span><img src="image/adobe-illustrator.png" alt="ai" itemprop="image"></span></li>
+                            <li><span><strong>Maya</strong></span><span>Intermédiaire</span><span><img src="image/maya.png" alt="maya" itemprop="image"></span></li>
                         </ul>
                         <hr>
-                        <img src="image/code (1).png" alt="code">
+                        <img src="image/code (1).png" alt="code" itemprop="image">
                         <h3>Langages</h3>
                         <hr>
                         <ul>
-                            <li><span><strong>HTML5</strong></span><span>Avancé</span><span><img src="image/html-5.png" alt="html"></span></li>
-                            <li><span><strong>CSS3</strong></span><span>Avancé</span><span><img src="image/css-3.png" alt="css"></span></li>
-                            <li><span><strong>PHP</strong></span><span>Intermédiaire</span><span><img src="image/php.png" alt="php"></span></li>
-                            <li><span><strong>JavaScript</strong></span><span>Avancé</span><span><img src="image/script-java.png" alt="javascript"></span></li>
+                            <li><span><strong>HTML5</strong></span><span>Avancé</span><span><img src="image/html-5.png" alt="html" itemprop="image"></span></li>
+                            <li><span><strong>CSS3</strong></span><span>Avancé</span><span><img src="image/css-3.png" alt="css" itemprop="image"></span></li>
+                            <li><span><strong>PHP</strong></span><span>Intermédiaire</span><span><img src="image/php.png" alt="php" itemprop="image"></span></li>
+                            <li><span><strong>JavaScript</strong></span><span>Avancé</span><span><img src="image/script-java.png" alt="javascript" itemprop="image"></span></li>
                         </ul>
                     </div>
                 </div>
                 <!-- Informations personnelles -->
-                <div class="info_centre">
+                <div class="info_centre" role="complementary">
                   <br>
-                  <h3><img src="image/donnees-personnelles (1).png" alt="info">Informations personnelles</h3>
+                  <h3><img src="image/donnees-personnelles (1).png" alt="info" itemprop="image">Informations personnelles</h3>
                   <br>
-                  <li><img src="image/linkedin.png" alt="linkedin"><strong> linkedin :</strong>Méliane KAMONOU</li>
-                  <li><img src="image/email.png" alt="email"><strong> Email :</strong> Melianekam@gmail.com</li>
+                  <li><img src="image/linkedin.png" alt="linkedin" itemprop="image"><strong> linkedin :</strong>Méliane KAMONOU</li>
+                  <li><img src="image/email.png" alt="email" itemprop="image"><strong> Email :</strong> Melianekam@gmail.com</li>
                   <li><strong> Téléphone :</strong> +33 607347046</li>
                   <li><strong> Adressse :</strong> 22 avenue leon-bourgeois </li>
                   
                   <br><br><hr>
                   <hr><br><br>
-                  <h3><img src="image/espace-reserve (1).png" alt="interet">Centres d'intérêt</h3><br>
+                  <h3><img src="image/espace-reserve (1).png" alt="interet" itemprop="image">Centres d'intérêt</h3><br>
               <ul>
-                  <li>Création numérique<img src="image/design.png" alt="graphique"></li>
-                  <li>Dessin<img src="image/crayon.png" alt="dessin"></li>
-                  <li>Peinture<img src="image/palette-de-peinture.png" alt="peinture"></li>
-                  <li>Musique<img src="image/casque-de-musique.png" alt="musique"></li>
+                  <li>Création numérique<img src="image/design.png" alt="graphique" itemprop="image"></li>
+                  <li>Dessin<img src="image/crayon.png" alt="dessin" itemprop="image"></li>
+                  <li>Peinture<img src="image/palette-de-peinture.png" alt="peinture" itemprop="image"></li>
+                  <li>Musique<img src="image/casque-de-musique.png" alt="musique" itemprop="image"></li>
               </ul><br><br>
               <hr><hr><br><br>
-              <h3><img src="image/code (1).png" alt="qualite">Qualités</h3><br>
+              <h3><img src="image/code (1).png" alt="qualite" itemprop="image">Qualités</h3><br>
               <ul>
-                  <li>Créatifs<img src="image/creatif (1).png" alt="creatifs"></li>
-                  <li>Rigoureuse<img src="image/gronder (1).png" alt="rigoureux"></li>
-                  <li>Esprit d'équipe<img src="image/esprit-dequipe (2).png" alt="equipe"></li>
-                  <li>Organisée<img src="image/organiser.png" alt="organisé"></li>
+                  <li>Créatifs<img src="image/creatif (1).png" alt="creatifs" itemprop="image"></li>
+                  <li>Rigoureuse<img src="image/gronder (1).png" alt="rigoureux" itemprop="image"></li>
+                  <li>Esprit d'équipe<img src="image/esprit-dequipe (2).png" alt="equipe" itemprop="image"></li>
+                  <li>Organisée<img src="image/organiser.png" alt="organisé" itemprop="image"></li>
               </ul>
               <hr><hr> <br><br>
-              <h3><img src="image/bureau.png" alt="office">Pack office</h3><br>
+              <h3><img src="image/bureau.png" alt="office" itemprop="image">Pack office</h3><br>
               <ul>
-                  <li>Word<img src="image/mot.png" alt="word"></li>
-                  <li>Access<img src="image/microsoft-access.png"alt="access"></li>
-                  <li>Excel<img src="image/exceller.png" alt="excel"></li>
-                  <li>Powerpoint<img src="image/power-point.png" alt="powerpoint"></li><br>
+                  <li>Word<img src="image/mot.png" alt="word" itemprop="image"></li>
+                  <li>Access<img src="image/microsoft-access.png"alt="access" itemprop="image"></li>
+                  <li>Excel<img src="image/exceller.png" alt="excel" itemprop="image"></li>
+                  <li>Powerpoint<img src="image/power-point.png" alt="powerpoint" itemprop="image"></li><br>
                   <hr>
                   <br><br>
-                  <li>Git<img src="image/git.png" alt="git"></li>
-                  <li>Trello<img src="image/trello.png" alt="trello"></li></ul><br>
+                  <li>Git<img src="image/git.png" alt="git" itemprop="image"></li>
+                  <li>Trello<img src="image/trello.png" alt="trello" itemprop="image"></li></ul><br>
               <hr><hr><br><br>
               <h3>CMS & Framework</h3><br>
                   <ul><li><span>Wordpress</span><span>Débutant</span></li>
@@ -188,7 +193,7 @@
                   </ul><br><br><hr><hr>
                    <br><br>
       
-              <h3><img src="image/espace-reserve (1).png" alt="langues">Langues</h3>
+              <h3><img src="image/espace-reserve (1).png" alt="langues" itemprop="image">Langues</h3>
               <ul><br>
                  <li>Anglais<p>intermédiaire</p></li>
               </ul>
@@ -202,19 +207,19 @@
             <h3>Mon Portfolio</h3>
             <div class="projects">
                 <div class="project">
-                    <img src="image/pp.png" alt="Projet 1">
+                    <img src="image/pp.png" alt="Projet 1" itemprop="image">
                     <h3>Projet 1 - Site Web Responsive</h3>
                     <p>Création d'un site web responsive avec une interface interactive. Technologies : HTML, CSS, PHP et Bootstrap.</p>
                     <a href="p1">Voir le projet</a>
                 </div>
                 <div class="project">
-                    <img src="image/kweb.png" alt="Projet 2">
+                    <img src="image/kweb.png" alt="Projet 2" itemprop="image">
                     <h3>Projet 2 - Design graphique</h3>
                     <p>Réalisation d'une identité visuelle pour une agence web. Outils : Illustrator, Photoshop.</p>
                     <a href="p2">Voir le projet</a>
                 </div>
                 <div class="project">
-                    <img src="image/KAM.png" alt="Projet 3">
+                    <img src="image/KAM.png" alt="Projet 3" itemprop="image">
                     <h3>Projet 3 - Design graphique</h3>
                     <p>Conception de supports de communication pour mon agence kam créa. Outils : Illustrator, HTML, CSS, PHP, et Bootstrap.</p>
                     <a href="p3">Voir le projet</a>
@@ -225,25 +230,26 @@
 
         <!-- Section Contact -->
         <section id="contact">
-            <form action="#" method="POST">
-                <h3>Contactez-moi</h3>
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
+          <form action="#" method="POST">
+              <h3>Contactez-moi</h3>
+              <label for="name">Nom :</label>
+              <input type="text" id="name" name="name" required aria-labelledby="name-label">
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required aria-labelledby="email-label">
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" required aria-labelledby="message-label"></textarea>
+              <button type="submit">Envoyer</button>
+          </form>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 [KAMONOU Méryl]. Tous droits réservés.</p>
-            <a href="https://www.linkedin.com/in/méliane-kamonou-362994337" rel="nofollow"><img src="image/linkedin.png" alt="linkedin" width="2%"></a>
-            <a href="mailto:melianekam@gmail.com" rel="nofollow"><img src="image/email.png" alt="email" width="2%"></a>
+            <a href="https://www.linkedin.com/in/méliane-kamonou-362994337" rel="nofollow" aria-label="Voir le profil LinkedIn de Meryl"><img src="image/linkedin.png" alt="linkedin" width="2%" itemprop="image" ></a>
+            <a href="mailto:melianekam@gmail.com" rel="nofollow" aria-label="Envoyer un email à Meryl"><img src="image/email.png" alt="email" width="2%" itemprop="image"></a>
+            
         </div>
     </footer>
 </body>
