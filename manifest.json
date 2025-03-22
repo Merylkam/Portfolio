@@ -2,7 +2,7 @@
   "name": "Mon Portfolio",
   "short_name": "Portfolio",
   "description": "Découvrez mon portfolio en ligne. Infographiste, web designer et développeuse web.",
-  "start_url": "/index.html",
+  "start_url": "https://merylkam.github.io/Portfolio/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0d6efd",
