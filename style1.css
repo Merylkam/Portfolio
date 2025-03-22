@@ -123,13 +123,14 @@
     color: #ffffff;
   }
   /*effet*/
-#cv img:hover{
-    
-        transform: scale(1.1); /* L'icône s'agrandit de 10% */
-        
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre douce pour plus d'effet */
-      
-}
+  #cv img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Définir une transition fluide sur la transformation et l'ombre */
+  }
+  
+  #cv img:hover {
+    transform: scale(1.1); /* L'icône s'agrandit de 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre douce */
+  }
    
 /*about*/
 
