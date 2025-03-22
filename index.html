@@ -234,7 +234,7 @@
         <!-- Section Contact -->
         <section id="contact">
           <form action="index" method="POST">
-              <h3>Contactez-moi</h3>
+              <h3>"N'hésitez pas à me contacter.</h3>
               <label for="name">Nom :</label>
               <input type="text" id="name" name="name" required aria-labelledby="name-label">
               <label for="email">Email :</label>
@@ -255,7 +255,41 @@
             
         </div>
     </footer>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+          event.preventDefault();  // Empêche la soumission normale du formulaire
+      
+          // Récupérer les valeurs du formulaire
+          const name = document.querySelector('#name').value;
+          const email = document.querySelector('#email').value;
+          const message = document.querySelector('#message').value;
+      
+          // Créer un objet avec les données du formulaire
+          const formData = {
+            name: name,
+            email: email,
+            message: message
+          };
+      
+          // Récupérer les messages déjà stockés (s'ils existent)
+          let storedMessages = JSON.parse(localStorage.getItem('messages')) || [];
+      
+          // Ajouter le nouveau message à la liste
+          storedMessages.push(formData);
+      
+          // Sauvegarder la liste mise à jour dans le localStorage
+          localStorage.setItem('messages', JSON.stringify(storedMessages));
+      
+          // Confirmer à l'utilisateur que le message a été "envoyé"
+          alert("Votre message a été envoyé merci !");
+          
+          // Vous pouvez également réinitialiser le formulaire si nécessaire
+          document.querySelector('form').reset();
+        });
 
+    
+      </script>
+      
     <script>
       if ('serviceWorker' in navigator) {
         // Enregistrement du Service Worker
@@ -273,10 +307,18 @@
       }
     </script>
   
+
 </body>
+
 
 </html>
 
+<!--Récupérer les données stockées :
+Si vous souhaitez récupérer ces messages stockés plus tard dans la session du navigateur, vous pouvez le faire avec le code suivant :
 
+javascript
+
+let storedMessages = JSON.parse(localStorage.getItem('messages')) || [];
+console.log(storedMessages);-->
 
   

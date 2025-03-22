@@ -122,8 +122,14 @@
     font-size: 5em;
     color: #ffffff;
   }
-  
-
+  /*effet*/
+#cv img:hover{
+    
+        transform: scale(1.1); /* L'icône s'agrandit de 10% */
+        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre douce pour plus d'effet */
+      
+}
    
 /*about*/
 
